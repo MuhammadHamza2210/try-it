@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: theme('fontFamily.sans');
+  background: theme('colors.ink');
+  color: theme('colors.plaster');
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Range inputs tinted to the brass accent */
+input[type='range'] {
+  accent-color: theme('colors.brass');
+}
